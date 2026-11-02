@@ -1,4 +1,14 @@
 <mixer>
+    <ctl name="RX0 Digital Volume" value="100" />
+    <ctl name="RX1 Digital Volume" value="100" />
+    <ctl name="RX2 Digital Volume" value="100" />
+    <ctl name="RX3 Digital Volume" value="100" />
+    <ctl name="RX4 Digital Volume" value="100" />
+    <ctl name="RX5 Digital Volume" value="100" />
+    <ctl name="RX6 Digital Volume" value="100" />
+    <ctl name="RX7 Digital Volume" value="100" />
+    <ctl name="RX8 Digital Volume" value="100" />
+    <ctl name="RX9 Digital Volume" value="100" />
 	<include name="/vendor/etc/mixer_gains.xml" />
 
 	<pcmdai playback_link="0" />
