@@ -1,14 +1,4 @@
 <mixer>
-    <ctl name="RX0 Digital Volume" value="100" />
-    <ctl name="RX1 Digital Volume" value="100" />
-    <ctl name="RX2 Digital Volume" value="100" />
-    <ctl name="RX3 Digital Volume" value="100" />
-    <ctl name="RX4 Digital Volume" value="100" />
-    <ctl name="RX5 Digital Volume" value="100" />
-    <ctl name="RX6 Digital Volume" value="100" />
-    <ctl name="RX7 Digital Volume" value="100" />
-    <ctl name="RX8 Digital Volume" value="100" />
-    <ctl name="RX9 Digital Volume" value="100" />
 	<include name="/vendor/etc/mixer_gains.xml" />
 
 	<pcmdai playback_link="0" />
@@ -131,6 +121,9 @@
 	</path>
 
 	<path name="route-spkamp-playback">
+		<!-- The amp's own limiter: keeps the louder speaker gain in mixer_gains.xml
+		     from crackling on loud passages. -->
+		<ctl name="Speaker Comp/Limiter(1:en_0:dis)" value="1" />
 		<ctl name="ABOX ERAP info Bypass On" value="1" />
 		<ctl name="ABOX ERAP info DSM On" value="0" />
 		<ctl name="ABOX NSRC3" value="UAIF3" />
