@@ -12,7 +12,7 @@
 
 	<path name="gain-media-speaker">
 		<ctl name="DAC Gain" value="55" />
-		<ctl name="Speaker Volume" value="117" />
+		<ctl name="Speaker Volume" value="125" />
 	</path>
 
 	<path name="gain-media-headset">
@@ -23,7 +23,7 @@
 
 	<path name="gain-media-speaker-headset">
 		<ctl name="DAC Gain" value="82" />
-		<ctl name="Speaker Volume" value="117" />
+		<ctl name="Speaker Volume" value="125" />
 		<ctl name="Headphone Volume" value="0" />
 		<ctl name="HP Analog Volume AVCBypass" value="54" />
 	</path>
@@ -32,7 +32,7 @@
 	</path>
 
 	<path name="gain-media-speaker-bt-sco-headset">
-		<ctl name="Speaker Volume" value="119" />
+		<ctl name="Speaker Volume" value="125" />
 	</path>
 
 	<!-- Ringtone playback volume -->
@@ -42,7 +42,7 @@
 	</path>
 
 	<path name="gain-ringtone-speaker">
-		<ctl name="Speaker Volume" value="119" />
+		<ctl name="Speaker Volume" value="125" />
 	</path>
 
 	<path name="gain-ringtone-headset">
@@ -53,7 +53,7 @@
 
 	<path name="gain-ringtone-speaker-headset">
 		<ctl name="DAC Gain" value="90" />
-		<ctl name="Speaker Volume" value="117" />
+		<ctl name="Speaker Volume" value="125" />
 		<ctl name="Headphone Volume" value="0" />
 		<ctl name="HP Analog Volume AVCBypass" value="54" />
 	</path>
@@ -62,7 +62,7 @@
 	</path>
 
 	<path name="gain-ringtone-speaker-bt-sco-headset">
-		<ctl name="Speaker Volume" value="119" />
+		<ctl name="Speaker Volume" value="125" />
 	</path>
 
 	<!-- Communication playback volume -->
@@ -471,7 +471,7 @@
 	</path>
 
 	<path name="gain-loopback_packet-speaker">
-		<ctl name="Speaker Volume" value="119" />
+		<ctl name="Speaker Volume" value="125" />
 	</path>
 
 	<path name="gain-loopback_packet-headset">
@@ -487,7 +487,7 @@
 	</path>
 
 	<path name="gain-realtimeloopback-speaker">
-		<ctl name="Speaker Volume" value="119" />
+		<ctl name="Speaker Volume" value="125" />
 	</path>
 
 	<path name="gain-realtimeloopback-headset">
@@ -542,7 +542,7 @@
 	</path>
 
 	<path name="gain-echo_test-speaker">
-		<ctl name="Speaker Volume" value="119" />
+		<ctl name="Speaker Volume" value="125" />
 	</path>
 
 	<!-- call forwarding output volume -->
