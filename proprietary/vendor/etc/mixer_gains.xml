@@ -1,8 +1,16 @@
 <mixer>
 	<!-- Output volume stage -->
 	<!-- media playback volume -->
+	<!-- Dual speaker (DualSpeakerEarphone high-gain module): start-up values the
+	     media and FM speaker paths use, with the earpiece as the second speaker.
+	     Speaker Volume stays at 125 (the module has 155): the amp driver pulls
+	     anything louder back to its init-vol, 0x2a = 125, within a second. -->
+	<ctl name="DAC Gain" value="150" />
+	<ctl name="Speaker Volume" value="125" />
+	<ctl name="Earphone Volume" value="172" />
+	<ctl name="Headphone Volume" value="172" />
 	<path name="gain-media-handset">
-		<ctl name="DAC Gain" value="144" />
+		<ctl name="DAC Gain" value="150" />
 		<ctl name="Earphone Volume" value="0" />
 	</path>
 
@@ -11,18 +19,18 @@
 	</path>
 
 	<path name="gain-media-speaker">
-		<ctl name="DAC Gain" value="55" />
-		<ctl name="Speaker Volume" value="125" />
+		<!--ctl name="DAC Gain" value="55" /-->
+		<!--ctl name="Speaker Volume" value="125" /-->
 	</path>
 
 	<path name="gain-media-headset">
-		<ctl name="DAC Gain" value="140" />
-		<ctl name="Headphone Volume" value="0" />
-		<ctl name="HP Analog Volume AVCBypass" value="58" />
+		<ctl name="DAC Gain" value="148" />
+		<ctl name="Headphone Volume" value="199" />
+		<!--ctl name="HP Analog Volume AVCBypass" value="58" /-->
 	</path>
 
 	<path name="gain-media-speaker-headset">
-		<ctl name="DAC Gain" value="82" />
+		<ctl name="DAC Gain" value="85" />
 		<ctl name="Speaker Volume" value="125" />
 		<ctl name="Headphone Volume" value="0" />
 		<ctl name="HP Analog Volume AVCBypass" value="54" />
@@ -1472,11 +1480,11 @@
 
 	<!-- FM Playback/Recording -->
 	<path name="gain-fm_radio-speaker" >
-		<ctl name="DAC Gain" value="88" />
+		<!--ctl name="DAC Gain" value="88" /-->
 	</path>
 
 	<path name="gain-fm_radio-headset" >
-		<ctl name="DAC Gain" value="143" />
+		<ctl name="DAC Gain" value="148" />
 		<ctl name="Headphone Volume" value="0" />
 		<ctl name="HP Analog Volume AVCBypass" value="54" />
 	</path>
